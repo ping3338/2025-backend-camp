@@ -1,3 +1,13 @@
+/**
+ * 堂數方案資料表
+ *
+ * 欄位說明：
+ * - id: 方案編號（UUID）
+ * - name: 方案名稱
+ * - credit_amount: 包含堂數
+ * - price: 方案價格
+ * - createdAt: 建立時間
+ */
 const { EntitySchema } = require("typeorm");
 
 module.exports = new EntitySchema({
@@ -32,15 +42,5 @@ module.exports = new EntitySchema({
       name: "created_at",
       nullable: false,
     },
-    /**
-     * 堂數方案資料表
-     *
-     * 欄位說明：
-     * - id: 方案編號（UUID）
-     * - name: 方案名稱
-     * - credit_amount: 包含堂數
-     * - price: 方案價格
-     * - createdAt: 建立時間
-     */
   },
 });
